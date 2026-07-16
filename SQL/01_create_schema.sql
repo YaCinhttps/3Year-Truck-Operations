@@ -27,7 +27,7 @@ CREATE TABLE trucks (
     acquisition_date DATE,
     acquisition_mileage INTEGER,
     fuel_type VARCHAR(22),
-    tank_capacity_gallons INTEGER,
+    tank_capacity_gallons INTSEGER,
     status VARCHAR(32),
     home_terminal VARCHAR(38),
     PRIMARY KEY (truck_id)
