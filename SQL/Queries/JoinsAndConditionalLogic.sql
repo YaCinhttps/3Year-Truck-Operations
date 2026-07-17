@@ -25,7 +25,26 @@ FROM trips
 GROUP BY trip_length_category
 
 
+SELECT
+    r.route_id,
+FROM routes r
+LEFT JOIN loads l ON l.route_id = r.route_id
+LEFT JOIN trips t ON t.load_id = l.load_id
+WHERE t.trip_id IS NULL
+ORDER BY r.route_id;
 
 
 
+SELECT
+    d.driver_id,
+    d.first_name,
+    d.last_name,
+    COUNT(fp.fuel_purchase_id) AS fuel_purchase_count,
+    SUM(fp.total_cost) AS total_fuel_cost,
+    ROUND(AVG(fp.total_cost), 2) AS avg_cost_per_purchase
+FROM drivers d
+JOIN fuel_purchases fp ON fp.driver_id = d.driver_id
+GROUP BY d.driver_id, d.first_name, d.last_name
+HAVING COUNT(fp.fuel_purchase_id) > 20
+ORDER BY total_fuel_cost DESC;
 
