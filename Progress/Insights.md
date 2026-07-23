@@ -36,6 +36,7 @@ This phase covers business analysis of the truck operations dataset using Postgr
 
 **Insight:**
 Since OR and WA have the exact same load count (7,338) but OR earns roughly $5.8M more, the revenue gap between the top states is driven more by revenue per load than by volume — worth checking total_revenue / load_count per state to confirm. The top 5 states (OR, CA, WA, TX, PA) together account for about 55% of total revenue across 18 states, which is a meaningful concentration but not an extreme one.   these states currently carry the most revenue, but that reflects where activity already is, not necessarily where the best growth opportunity is — expansion decisions would need cost, competition, and lane-profitability data this table doesn't show, not just revenue share.
+Revenue is concentrated in a handful of states — OR, CA, WA, TX, and PA make up about 55% of total revenue. OR earns more per load than any other state ($5,289/load), and the follow-up dug into why: OR and WA run nearly identical distances (~2,220 miles), but OR is priced higher per mile ($2.43 vs $2.15) — about a 13% gap that carries straight through to actual revenue per mile. So it's a pricing difference, not a distance difference.
 
 ---
 
