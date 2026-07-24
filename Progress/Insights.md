@@ -35,32 +35,56 @@ This phase covers business analysis of the truck operations dataset using Postgr
 | IL | 1,456 | $1,675,362.80 | 0.64% | $1,150.66 |
 
 **Insight:**
-Since OR and WA have the exact same load count (7,338) but OR earns roughly $5.8M more, the revenue gap between the top states is driven more by revenue per load than by volume — worth checking total_revenue / load_count per state to confirm. The top 5 states (OR, CA, WA, TX, PA) together account for about 55% of total revenue across 18 states, which is a meaningful concentration but not an extreme one.   these states currently carry the most revenue, but that reflects where activity already is, not necessarily where the best growth opportunity is — expansion decisions would need cost, competition, and lane-profitability data this table doesn't show, not just revenue share.
-Revenue is concentrated in a handful of states — OR, CA, WA, TX, and PA make up about 55% of total revenue. OR earns more per load than any other state ($5,289/load), and the follow-up dug into why: OR and WA run nearly identical distances (~2,220 miles), but OR is priced higher per mile ($2.43 vs $2.15) — about a 13% gap that carries straight through to actual revenue per mile. So it's a pricing difference, not a distance difference.
+"I was looking at revenue by state and found the top five states drive over half our revenue. But the interesting part was comparing Oregon and Washington — same exact number of loads, yet Oregon brought in almost six million more. So I checked the rate data, and it turned out Oregon's freight was priced about thirteen percent higher per mile, even though trip distances were nearly identical. So it wasn't volume driving the gap, it was pricing. The takeaway: don't assume more revenue means 'do more there' — sometimes it means you're already pricing well, and the real opportunity is bringing weaker states up to that level."
 
 ---
+
 
 **Q2: Which customers generate the most revenue, and how concentrated is that revenue?**
-
-> _Your answer / findings here_
-
-| Customer | Total Loads | Total Revenue | % of Total Revenue |
-|---|---|---|---|
-| | | | |
-
+ 
+Across ~200 customers, revenue share ranges narrowly from 0.41% to 0.59% of total — no single customer or small group dominates.
+ 
+| Customer ID | Customer Name | Total Loads | Total Revenue | % of Total |
+|---|---|---:|---:|---:|
+| CUST00200 | XYZ Foods | 476 | $1,544,419.81 | 0.59% |
+| CUST00181 | Superior Group | 497 | $1,542,321.02 | 0.59% |
+| CUST00077 | Metro Group | 487 | $1,521,982.07 | 0.58% |
+| CUST00097 | National Wholesale | 470 | $1,487,129.31 | 0.57% |
+| CUST00122 | Metro Foods | 463 | $1,483,188.90 | 0.56% |
+| CUST00028 | First Group | 476 | $1,481,527.84 | 0.56% |
+| CUST00110 | Continental Group | 481 | $1,479,584.73 | 0.56% |
+| CUST00101 | United Corp | 460 | $1,477,854.32 | 0.56% |
+| CUST00124 | First Supply Chain | 454 | $1,472,131.31 | 0.56% |
+| CUST00196 | XYZ Logistics | 483 | $1,471,132.90 | 0.56% |
+| ... | *(~185 more customers, revenue declining gradually — see full CSV in data/analysis/)* | | | |
+| CUST00156 | First Logistics | 382 | $1,128,763.05 | 0.43% |
+| CUST00149 | First Group | 400 | $1,078,045.01 | 0.41% |
+ 
 **Insight:**
+ 
+"After that, I checked whether we had the same concentration risk at the customer level — like, are we dependent on a few big accounts. Turns out no. Across two hundred customers, every single one sat between roughly zero-point-four and zero-point-six percent of total revenue — no cliff, nobody standing out. So unlike the state-level picture, the customer base is genuinely diversified, which is a good sign — losing any one account wouldn't meaningfully hurt the business.
 
 ---
 
+
 **Q3: Which routes are the most and least profitable, accounting for the rate structure vs. actual earnings?**
-
-> _Your answer / findings here — note how you defined "profitable" for this question_
-
-| Route | Base Rate/Mile | Actual Revenue/Mile | Variance |
-|---|---|---|---|
-| | | | |
-
+ 
+Every one of the 58 routes underperformed its posted `base_rate_per_mile` — no route came in above rate. The gap is small (roughly -2.2% to -3.2%) but strikingly consistent across all routes regardless of price point, distance, or fuel surcharge.
+ 
+| Route ID | Origin | Destination | Base Rate/Mile | Fuel Surcharge | Actual Rev/Mile | Variance | Variance % |
+|---|---|---|---:|---:|---:|---:|---:|
+| RTE00046 | Columbus | Los Angeles | $2.74 | 22.00% | $2.65 | -$0.09 | -3.22% |
+| RTE00038 | Las Vegas | Kansas City | $2.71 | 24.00% | $2.62 | -$0.09 | -3.16% |
+| RTE00011 | New York | Columbus | $1.69 | 24.00% | $1.64 | -$0.05 | -3.14% |
+| RTE00058 | Kansas City | Indianapolis | $2.27 | 19.00% | $2.20 | -$0.07 | -3.14% |
+| RTE00045 | Charlotte | Memphis | $2.33 | 23.00% | $2.26 | -$0.07 | -3.12% |
+| ... | *(~48 more routes, variance holding steady in the -2.2% to -3.2% band — see full CSV in data/analysis/)* | | | | | | |
+| RTE00010 | New York | Philadelphia | $1.61 | 17.00% | $1.57 | -$0.04 | -2.28% |
+| RTE00016 | Philadelphia | Seattle | $2.50 | 17.00% | $2.44 | -$0.06 | -2.21% |
+ 
 **Insight:**
+ 
+Every route earns slightly less than its posted rate, but the uniformity of the gap (a tight ~1-point band across all 58 routes) rules out a simple "some routes are underperforming" story — this looks systemic. First hypothesis tested was the fuel surcharge (`fuel_surcharge_rate`), on the theory that actual revenue might be calculated net of surcharge while `base_rate_per_mile` isn't. That was ruled out directly: routes with similar surcharge rates show meaningfully different variance, and vice versa (e.g. RTE00043 and RTE00047 both carry a 16% surcharge but land at -3.09% and -2.90% variance respectively) — no real correlation.
 
 ---
 
