@@ -96,19 +96,28 @@ Every route earns slightly less than its posted rate, but the uniformity of the 
 I checked monthly load volume over three years — pretty flat, within 2% year over year, so this is a stable business, not a growth story. One thing caught my eye though: February was always the lowest month. But February also has fewer days, so I normalized to a per-day rate before trusting that — and the dip disappeared. Turned out to be a calendar artifact, not a real seasonal pattern.
 
 **Insight:**
-Turned out to be a calendar artifact, not a real seasonal pattern And It did not need to be flagged 
-
+Turned out to be a calendar artifact, not a real seasonal pattern And It did not need to be flagged .
 ---
-
+ 
 **Q6: Which days of the week see the most loads dispatched, and does that correlate with revenue?**
 
-> _Your answer / findings here_
-
+Load volume is essentially flat across all 7 days — the spread runs from 12,011 (Wednesday) to 12,544 (Tuesday), about 4%, and average revenue per load varies by under 1% across the whole week. With roughly 85,000 total loads spread across 7 days, a gap of a few hundred loads on any given day is within normal variation, not a meaningful operational signal — same lesson as the February check in Q5
+ 
 | Weekday | Load Count | Total Revenue | Avg Revenue/Load |
-|---|---|---|---|
-| | | | |
-
+|---|---:|---:|---:|
+| Monday | 12,278 | $37,859,719.40 | $3,083.54 |
+| Tuesday | 12,544 | $38,464,806.89 | $3,066.39 |
+| Wednesday | 12,011 | $37,051,757.88 | $3,084.82 |
+| Thursday | 12,296 | $37,784,185.70 | $3,072.88 |
+| Friday | 12,152 | $37,402,517.64 | $3,077.89 |
+| Saturday | 12,086 | $37,056,763.59 | $3,066.09 |
+| Sunday | 12,043 | $36,906,049.19 | $3,064.52 |
+ 
 **Insight:**
+ 
+ there's no real weekday/weekend split here. Saturday and Sunday are not meaningfully lower than weekdays, which is somewhat unusual for a freight operation and worth stating as a finding on its own: there's no obvious slow day to plan staffing or capacity around — demand is evenly distributed across the full week.
+
+
 
 ---
 
