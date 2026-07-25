@@ -86,17 +86,6 @@ Every one of the 58 routes underperformed its posted `base_rate_per_mile` — no
  
 Every route earns slightly less than its posted rate, but the uniformity of the gap (a tight ~1-point band across all 58 routes) rules out a simple "some routes are underperforming" story — this looks systemic. First hypothesis tested was the fuel surcharge (`fuel_surcharge_rate`), on the theory that actual revenue might be calculated net of surcharge while `base_rate_per_mile` isn't. That was ruled out directly: routes with similar surcharge rates show meaningfully different variance, and vice versa (e.g. RTE00043 and RTE00047 both carry a 16% surcharge but land at -3.09% and -2.90% variance respectively) — no real correlation.
 
----
-
-**Q4: Is there a relationship between contract type and average revenue per load?**
-
-> _Your answer / findings here_
-
-| Contract Type | Avg Revenue/Load | Load Count |
-|---|---|---|
-| | | |
-
-**Insight:**
 
 ---
 
@@ -104,9 +93,10 @@ Every route earns slightly less than its posted rate, but the uniformity of the 
 
 **Q5: How has load volume trended month over month across the full 3-year period?**
 
-> _Your answer / findings here_
+I checked monthly load volume over three years — pretty flat, within 2% year over year, so this is a stable business, not a growth story. One thing caught my eye though: February was always the lowest month. But February also has fewer days, so I normalized to a per-day rate before trusting that — and the dip disappeared. Turned out to be a calendar artifact, not a real seasonal pattern.
 
 **Insight:**
+Turned out to be a calendar artifact, not a real seasonal pattern And It did not need to be flagged 
 
 ---
 
