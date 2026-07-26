@@ -9,8 +9,6 @@ GROUP BY MONTH
 ORDER BY month;
 
 
- 
-
  WITH monthly AS (
     SELECT
         DATE_TRUNC('month', load_date) AS month,

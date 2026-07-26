@@ -121,15 +121,19 @@ Load volume is essentially flat across all 7 days — the spread runs from 12,01
 
 ---
 
+---
+ 
 **Q7: What does a typical load look like in value (median, quartiles, outliers)?**
-
-> _Your answer / findings here_
-
+ 
 | Q1 | Median | Q3 | Min | Max |
-|---|---|---|---|---|
-| | | | | |
-
+|---:|---:|---:|---:|---:|
+| $1,443.22 | $2,827.98 | $4,323.16 | $125.93 | $8,125.22 |
+ 
 **Insight:**
+ 
+Load value shows a tight, well-behaved distribution — median $2,827.98 sits reasonably close to the average $3,073.71 (about 9% apart), and the maximum load value ($8,125.22) falls just under the standard 1.5×IQR outlier threshold ($8,643.07, calculated from IQR = Q3 − Q1 = $2,879.94), meaning there are no statistical outliers in the dataset at all. Combined with the flat weekday pattern from Q6, this reinforces the picture of a highly standardized, consistent freight operation rather than one with a mix of small and occasional massive shipments.
+ 
+---
 
 ---
 
