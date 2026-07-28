@@ -139,9 +139,13 @@ Load value shows a tight, well-behaved distribution — median $2,827.98 sits re
 
 **Q8: Are there seasonal patterns — do certain months consistently outperform others across all 3 years?**
 
-> _Your answer / findings here — note how you separated "real seasonality" from noise_
-
+No meaningful seasonal pattern.
+ 
 **Insight:**
+ 
+Comparing every calendar month against itself across years (e.g. all three Januaries, all three Junes) and normalizing for actual days-in-month — including the 2024 leap year (Feb had 29 days that year) — shows load volume ranging from 75.77 to 78.96 loads/day across all 12 months, a spread of just 4.1% of the overall average (77.93 loads/day). Notably, once normalized, February is no longer the low point (that was a days-in-month artifact addressed in Q5) — December is the slight low instead, and even that gap is unremarkable. This is consistent with the flat weekly pattern in Q6 and the flat year-over-year trend in Q5: this is a highly stable, non-seasonal freight operation. No month or season warrants special staffing, capacity, or pricing adjustments based on this data.
+
+
 
 ---
 
