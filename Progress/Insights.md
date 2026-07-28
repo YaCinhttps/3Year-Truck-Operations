@@ -151,28 +151,26 @@ Comparing every calendar month against itself across years (e.g. all three Janua
 
 ### 3. Fleet & Driver Performance
 
-**Q9: Which drivers generate the most revenue per mile driven, and is that correlated with tenure?**
-
-> _Your answer / findings here_
-
-| Driver | Tenure (months) | Revenue/Mile | Total Miles |
-|---|---|---|---|
-| | | | |
-
-**Insight:**
 
 ---
-
+ 
 **Q10: What's the average MPG by truck make/model, and is there a fleet-wide MPG trend over the 3 years?**
-
-> _Your answer / findings here_
-
-| Make/Model | Avg MPG | Trip Count |
-|---|---|---|
-| | | |
-
+ 
+Fuel efficiency is uniform — both across truck makes and across time.
+ 
+| Make | Avg MPG | Trip Count |
+|---|---:|---:|
+| Mack | 6.51 | 12,681 |
+| Kenworth | 6.50 | 10,030 |
+| Peterbilt | 6.50 | 14,699 |
+| International | 6.50 | 15,450 |
+| Freightliner | 6.50 | 13,660 |
+| Volvo | 6.49 | 17,218 |
+ 
 **Insight:**
-
+ 
+Fuel efficiency is remarkably uniform across this fleet, both by truck make and over time. All six manufacturers average within 6.49-6.51 MPG of each other — a 0.02 MPG spread across trip counts ranging from ~10K to ~17K, ruling out small-sample noise as the explanation. The 3-year monthly trend shows the same flatness: MPG ranges from 6.47 to 6.53 with no meaningful upward or downward drift across 36 months (Jan 2022 = 6.51, Dec 2024 = 6.51). Combined with the flat patterns already found in load volume (Q5), weekday distribution (Q6), and seasonality (Q8), this reinforces that operations here are highly standardized — fuel efficiency isn't driven by which truck manufacturer is used or by fleet aging/turnover, and there's no efficiency trend to act on either positively or negatively.
+ 
 ---
 
 **Q11: Which trucks have the highest maintenance cost per mile driven — older or newer vehicles?**
