@@ -175,19 +175,29 @@ Fuel efficiency is remarkably uniform across this fleet, both by truck make and 
 
 **Q11: Which trucks have the highest maintenance cost per mile driven — older or newer vehicles?**
 
-> _Your answer / findings here — note how you defined "older/newer"_
+Contrary to the typical assumption, cost per mile does not increase with age — if anything, it trends slightly down.
+ 
+| Truck Age | Avg Cost/Mile | Sample Size |
+|---|---:|---:|
+| 4 yrs | $0.040 | 1 |
+| 5 yrs | $0.0367 | 18 |
+| 6 yrs | $0.0360 | 10 |
+| 7 yrs | $0.0391 | 11 |
+| 8 yrs | $0.0382 | 17 |
+| 9 yrs | $0.0364 | 14 |
+| 10 yrs | $0.0336 | 11 |
+| 11 yrs | $0.0330 | 10 |
+ 
 
-| Truck | Age (years) | Cost/Mile | Total Maintenance Cost |
-|---|---|---|---|
-| | | | |
 
 **Insight:**
+I expected older trucks to cost more to maintain per mile — that's the obvious assumption. But when I grouped by truck age, there was no upward trend at all. If anything, older trucks were slightly cheaper per mile, not more expensive. I checked whether older trucks were just driven less, but miles were roughly the same across every age group, so that wasn't it. My best guess is survivorship bias — trucks that got expensive to maintain probably got retired already, so the old trucks still in the fleet are the ones that held up well. I can't fully confirm that without retirement records, but it's a real counterintuitive finding worth flagging rather than forcing it to match the assumption I walked in with
 
 ---
 
 **Q12: Is there a relationship between truck utilization and maintenance frequency/cost?**
 
-> _Your answer / findings here_
+
 
 **Insight:**
 
