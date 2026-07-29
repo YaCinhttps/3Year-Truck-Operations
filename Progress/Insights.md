@@ -194,13 +194,22 @@ Contrary to the typical assumption, cost per mile does not increase with age —
 I expected older trucks to cost more to maintain per mile — that's the obvious assumption. But when I grouped by truck age, there was no upward trend at all. If anything, older trucks were slightly cheaper per mile, not more expensive. I checked whether older trucks were just driven less, but miles were roughly the same across every age group, so that wasn't it. My best guess is survivorship bias — trucks that got expensive to maintain probably got retired already, so the old trucks still in the fleet are the ones that held up well. I can't fully confirm that without retirement records, but it's a real counterintuitive finding worth flagging rather than forcing it to match the assumption I walked in with
 
 ---
-
+ 
 **Q12: Is there a relationship between truck utilization and maintenance frequency/cost?**
-
-
-
+ 
+No meaningful relationship — maintenance appears schedule-driven, not wear-driven.
+ 
+| Utilization Quartile | Avg Miles | Avg Maint. Count | Avg Maint. Cost | Avg Cost/Mile |
+|---|---:|---:|---:|---:|
+| Q1 (lowest) | 1,236,356 | 25.3 | $48,989 | $0.0396 |
+| Q2 | 1,287,703 | 24.6 | $46,156 | $0.0359 |
+| Q3 | 1,317,668 | 22.8 | $45,102 | $0.0342 |
+| Q4 (highest) | 1,364,195 | 24.3 | $47,988 | $0.0351 |
+ 
 **Insight:**
-
+ 
+I expected trucks driven more to need more maintenance — that's the intuitive assumption. So I bucketed all 120 trucks into utilization quartiles by total miles driven and compared maintenance frequency and cost across buckets. There's basically no relationship — correlation between miles driven and maintenance count is -0.042, and miles vs. total cost is +0.014, both essentially zero. The busiest trucks (Q4) aren't maintained more often or more expensively than the least-used trucks (Q1). Combined with Q11's finding that truck age doesn't drive maintenance cost either, this suggests maintenance in this fleet is likely scheduled on a fixed interval rather than driven by actual wear or usage. A useful follow-up outside this analysis: does `maintenance_records` distinguish scheduled preventive service from unscheduled repairs? That distinction would explain why neither age nor mileage shows the expected relationship.
+ 
 ---
 
 ### 4. Logistics & Delivery
