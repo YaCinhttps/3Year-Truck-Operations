@@ -215,15 +215,23 @@ I expected trucks driven more to need more maintenance — that's the intuitive 
 ### 4. Logistics & Delivery
 
 **Q13: What's the overall on-time delivery rate, and how does it vary by facility?**
-
-> _Your answer / findings here_
-
+ 
+Only 55.67% of deliveries are on time company-wide — a systemic issue, not a facility-specific one.
+ 
 | Facility | Total Events | On-Time % |
-|---|---|---|
-| | | |
-
+|---|---:|---:|
+| FAC00048 (lowest) | 3,384 | 53.04% |
+| FAC00012 | 3,278 | 53.42% |
+| FAC00034 | 3,414 | 53.46% |
+| ... | *(46 more facilities, all between 53-58% — see full CSV in data/analysis/)* | |
+| FAC00022 | 3,419 | 57.71% |
+| FAC00001 (highest) | 3,279 | 58.28% |
+| **All facilities combined** | **170,820** | **55.67%** |
+ 
 **Insight:**
-
+ 
+The overall on-time delivery rate across all 50 facilities and 170,820 delivery events is 55.67% — meaning nearly half of every delivery in this operation is late. That tight, consistent spread is itself the finding: this isn't a few underperforming facilities dragging down the average ,this is a case where the underlying number itself (55.67% on-time) is the headline finding, and it's a real operational issue worth flagging to stakeholders regardless of which facility they operate.
+ 
 ---
 
 **Q14: Is there a relationship between detention time and on-time delivery outcomes?**
