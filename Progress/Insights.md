@@ -272,15 +272,21 @@ This is the third consecutive question (Q13, Q14, Q15) pointing to the same conc
 ---
 
 **Q16: How does idle time vary by driver — are some drivers consistently more efficient than others?**
-
-> _Your answer / findings here_
-
+ 
+No meaningful variation — idle time is essentially uniform across all 150 drivers.
+ 
 | Driver | Avg Idle Hours/Trip | Trip Count |
-|---|---|---|
-| | | |
-
+|---|---:|---:|
+| DRV00028 (lowest) | 6.69 | 637 |
+| DRV00045 | 6.76 | 650 |
+| DRV00122 | 6.77 | 604 |
+| ... | *(~144 more drivers, smooth continuous gradient, no clustering — see full CSV in data/analysis/)* | |
+| DRV00083 | 7.27 | 690 |
+| DRV00017 (highest) | 7.35 | 652 |
+ 
 **Insight:**
-
+ 
+No meaningful driver-to-driver variation in idle time efficiency. Across 150 drivers, average idle time per trip ranges from 6.69 to 7.35 hours — a spread of only 0.66 hours (9.4% relative), distributed smoothly across the full range with no natural clustering into "efficient" vs. "inefficient" groups.individual and equipment-level variation in this dataset tends to be small and within normal range, while the real operational issue (on-time delivery, Q13-Q15) is structural rather than tied to any individual driver or truck.
 ---
 
 ### 5. Safety
