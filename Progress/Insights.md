@@ -248,15 +248,26 @@ Late deliveries show meaningfully higher average detention time (95.41 minutes) 
  
 ---
  
+---
+ 
 **Q15: Which routes have the most trip volume, and do high-volume routes have better or worse on-time performance?**
-
-> _Your answer / findings here_
-
+ 
+No relationship — high and low-volume routes perform the same.
+ 
 | Route | Trip Volume | On-Time % |
-|---|---|---|
-| | | |
-
+|---|---:|---:|
+| RTE00047 (highest volume) | 1,628 | 55.71% |
+| RTE00015 | 1,537 | 55.63% |
+| RTE00046 | 1,534 | 54.56% |
+| ... | *(52 more routes, on-time % clustering 53-57% regardless of volume)* | |
+| RTE00023 | 1,398 | 55.79% |
+| RTE00053 (lowest volume) | 1,386 | 56.10% |
+ 
 **Insight:**
+ 
+No meaningful relationship between route trip volume and on-time performance — correlation between the two is -0.063, essentially zero. Trip volume itself is fairly evenly distributed across all 58 routes (1,386-1,628 trips, ~17% spread), and on-time percentage clusters tightly around the same 53-57% band found at the facility level in Q13, with the average across routes (55.67%) landing exactly on the company-wide rate.
+ 
+This is the third consecutive question (Q13, Q14, Q15) pointing to the same conclusion from different angles: the on-time delivery problem isn't concentrated in specific facilities, isn't fully explained by detention time, and isn't related to how busy a route is. It's a uniform, systemic issue present everywhere in the operation regardless of how the data is sliced — which is a stronger and more actionable finding than any single one of these results on its own. It points toward a root cause in scheduling assumptions .
 
 ---
 
