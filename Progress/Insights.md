@@ -233,15 +233,21 @@ Only 55.67% of deliveries are on time company-wide — a systemic issue, not a f
 The overall on-time delivery rate across all 50 facilities and 170,820 delivery events is 55.67% — meaning nearly half of every delivery in this operation is late. That tight, consistent spread is itself the finding: this isn't a few underperforming facilities dragging down the average ,this is a case where the underlying number itself (55.67% on-time) is the headline finding, and it's a real operational issue worth flagging to stakeholders regardless of which facility they operate.
  
 ---
-
+ 
 **Q14: Is there a relationship between detention time and on-time delivery outcomes?**
-
-> _Your answer / findings here_
-
+ 
+| On-Time Status | Event Count | Avg Detention (min) |
+|---|---:|---:|
+| Late | 75,725 | 95.41 |
+| On Time | 95,095 | 88.46 |
+ 
 **Insight:**
+ 
+Late deliveries show meaningfully higher average detention time (95.41 minutes) than on-time deliveries (88.46 minutes) — a 7-minute, ~8% gap. The direction is intuitive: more time spent waiting at pickup or delivery increases the chance of running late. However, the magnitude is modest — detention time alone doesn't explain the scale of the on-time problem found in Q13 (only 55.67% on-time company-wide), so it's a contributing factor rather than the root cause. With ~170K events behind it, the gap is unlikely to be random noise, but there's clearly more driving the overall on-time shortfall than detention alone.
 
+ 
 ---
-
+ 
 **Q15: Which routes have the most trip volume, and do high-volume routes have better or worse on-time performance?**
 
 > _Your answer / findings here_
