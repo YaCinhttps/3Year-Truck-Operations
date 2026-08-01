@@ -318,25 +318,38 @@ Mostly spread thin, but 2 drivers are real outliers.
 58 of 150 drivers (39%) had zero incidents, and most others had just 1-2 — normal, low-level spread. But two drivers clearly stand out: DRV00058 (7 incidents, 10.6/1,000 trips) and DRV00003 (6 incidents, 8.86/1,000 trips), both with trip counts similar to peers, so it's not small-sample noise — they're genuine outliers, roughly double the next-highest tier (3 incidents). This is a case for individual driver review, not a fleet-wide policy fix.
  
 ---
-
+ 
 **Q19: What proportion of incidents are marked preventable, and does that vary by driver tenure?**
-
-> _Your answer / findings here_
-
+ 
+Preventable rate trends up with tenure, not down.
+ 
 | Tenure Bucket | Total Incidents | Preventable % |
-|---|---|---|
-| | | |
-
+|---|---:|---:|
+| Under 1 year | 4 | 25.00% |
+| 1-3 years | 58 | 34.48% |
+| 3+ years | 107 | 39.25% |
+ 
 **Insight:**
-
+ 
+Preventable incident rate doesn't decrease with tenure — it trends slightly up: 39.25% for 3+ year drivers (n=107) vs. 34.48% for 1-3 years (n=58), a modest but real gap on decent sample sizes. The "Under 1 year" figure (25.00%) isn't reliable — only 4 incidents total, so one incident swings it by 25 points. This runs against the common assumption that newer drivers are more accident-prone; complacency among tenured drivers is a plausible explanation, but this data only shows the pattern, not the cause.
+ 
 ---
-
+ 
 **Q20: Is there a relationship between recent maintenance activity and safety incidents?**
-
-> _Your answer / findings here — note how you defined "recent maintenance"_
-
+ 
+No strong pattern, small cluster right after maintenance worth flagging.
+ 
+| Days Since Maintenance | # of Incidents |
+|---|---:|
+| 0-7 | 25 |
+| 8-30 | 50 |
+| 31-90 | 61 |
+| 90+ | 22 |
+ 
 **Insight:**
-
+ 
+Most incidents happen well after maintenance — median 33 days out, mean 46.4 — so there's no clear "just serviced and something broke" pattern. There is a small cluster: 25 incidents (including 2 same-day) occurred within a week of a maintenance event, worth flagging but not enough data to call it causal versus coincidence. Combined with Q11/Q12's finding that maintenance cost isn't driven by truck age or utilization, this reinforces that maintenance in this fleet looks routine/scheduled rather than tied to actual mechanical risk or incident causation. 11 incidents have no prior maintenance record at all, mostly early-2022 incidents predating the tracked maintenance history.
+ 
 ---
 
 ## 🔑 Summary of Key Business Insights
