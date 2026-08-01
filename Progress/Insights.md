@@ -292,11 +292,12 @@ No meaningful driver-to-driver variation in idle time efficiency. Across 150 dri
 ### 5. Safety
 
 **Q17: What's the overall safety incident rate (per 1,000 trips or per million miles)?**
-
-> _Your answer / findings here — note which denominator you chose and why_
-
+ 
+1.99 incidents per 1,000 trips (0.199% of trips).
+ 
 **Insight:**
-
+I checked the overall safety incident rate — came out to about 2 per 1,000 trips, under a fifth of a percent. I also wanted the per-million-miles version since that's the real industry standard, but I only have a rough estimate for that right now, not an exact number — still need to run the precise query. And honestly, I don't know yet if this rate is good or bad — there's no benchmark in the data itself to compare against
+ 
 ---
 
 **Q18: Are incidents concentrated among certain drivers, or spread evenly across the fleet?**
