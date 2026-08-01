@@ -351,15 +351,29 @@ No strong pattern, small cluster right after maintenance worth flagging.
 Most incidents happen well after maintenance — median 33 days out, mean 46.4 — so there's no clear "just serviced and something broke" pattern. There is a small cluster: 25 incidents (including 2 same-day) occurred within a week of a maintenance event, worth flagging but not enough data to call it causal versus coincidence. Combined with Q11/Q12's finding that maintenance cost isn't driven by truck age or utilization, this reinforces that maintenance in this fleet looks routine/scheduled rather than tied to actual mechanical risk or incident causation. 11 incidents have no prior maintenance record at all, mostly early-2022 incidents predating the tracked maintenance history.
  
 ---
-
+ 
 ## 🔑 Summary of Key Business Insights
-
-1.
-2.
-3.
-4.
-5.
-
+ 
+**1. Nearly half of all deliveries arrive late — and it's happening everywhere, not just in a few problem spots.**
+Only 55.67% of deliveries are on time. If this were just a handful of bad facilities or busy routes, that would be one fix. But every facility and every route shows roughly the same rate — meaning the cause is systemic, not local. We haven't pinned down the exact root cause yet (a data-measurement issue is the leading theory, not necessarily a real operational failure), but this is the single most important thing to resolve before anything else.
+ 
+**2. Two drivers are driving an outsized share of safety incidents.**
+Most drivers (39%) had zero incidents over three years, and the rest had just 1-2 — completely normal. But two specific drivers had 6 and 7 incidents each, roughly double anyone else. This isn't a fleet-wide safety problem; it's two people who need individual coaching or review.
+ 
+**3. Experienced drivers have more preventable incidents than newer ones — the opposite of what you'd expect.**
+Drivers with 3+ years on the job had a 39% preventable-incident rate, versus 35% for drivers with 1-3 years. Worth exploring whether experienced drivers could use a refresher, since tenure alone isn't making them safer here.
+ 
+**4. No single customer matters more than any other — that's a good thing.**
+Revenue is spread almost perfectly evenly across roughly 200 customers. Losing any one of them wouldn't meaningfully hurt the business. Low risk here.
+ 
+**5. Revenue is concentrated in a few states, and Oregon earns more because of pricing, not because it ships farther.**
+The top five states bring in about 55% of all revenue. Oregon and Washington ship almost identical distances, but Oregon is priced about 13% higher per mile — meaning there may be room to raise rates in Washington and similar states without changing how far trucks actually drive.
+ 
+**6. Older and higher-mileage trucks don't cost more to maintain — maintenance looks scheduled, not usage-based.**
+You'd expect older, harder-worked trucks to need more repairs. They don't. That suggests maintenance is happening on a fixed calendar rather than in response to actual wear — worth checking with fleet ops, since usage-based scheduling could save money on trucks that aren't driven as much.
+ 
+**7. The business is steady, not growing — and there's no busy season or slow day to plan around.**
+Load volume barely moved over three years, and once you account for things like February simply having fewer days, there's no real seasonal pattern either. That's useful for staffing and capacity planning, but it also means any growth will need to come from new initiatives — the current pattern won't create it on its own.
+ 
 ---
-
 
