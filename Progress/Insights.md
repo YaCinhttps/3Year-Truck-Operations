@@ -299,17 +299,24 @@ No meaningful driver-to-driver variation in idle time efficiency. Across 150 dri
 I checked the overall safety incident rate — came out to about 2 per 1,000 trips, under a fifth of a percent. I also wanted the per-million-miles version since that's the real industry standard, but I only have a rough estimate for that right now, not an exact number — still need to run the precise query. And honestly, I don't know yet if this rate is good or bad — there's no benchmark in the data itself to compare against
  
 ---
-
+ 
 **Q18: Are incidents concentrated among certain drivers, or spread evenly across the fleet?**
-
-> _Your answer / findings here_
-
-| Driver | Incident Count | Total Trips | Incident Rate |
-|---|---|---|---|
-| | | | |
-
+ 
+Mostly spread thin, but 2 drivers are real outliers.
+ 
+| Incident Count | # of Drivers |
+|---|---:|
+| 0 | 58 |
+| 1 | 40 |
+| 2 | 34 |
+| 3 | 16 |
+| 6 | 1 (DRV00003) |
+| 7 | 1 (DRV00058) |
+ 
 **Insight:**
-
+ 
+58 of 150 drivers (39%) had zero incidents, and most others had just 1-2 — normal, low-level spread. But two drivers clearly stand out: DRV00058 (7 incidents, 10.6/1,000 trips) and DRV00003 (6 incidents, 8.86/1,000 trips), both with trip counts similar to peers, so it's not small-sample noise — they're genuine outliers, roughly double the next-highest tier (3 incidents). This is a case for individual driver review, not a fleet-wide policy fix.
+ 
 ---
 
 **Q19: What proportion of incidents are marked preventable, and does that vary by driver tenure?**
